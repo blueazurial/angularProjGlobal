@@ -1,0 +1,16 @@
+
+<div>
+    <h2>afficher val var binding one-way</h2>
+    <p>{{titel}}</p>
+
+    <h2>afficher val var binding two-way</h2>
+
+    <input type="text" [(ngModel)]="titel"/>
+
+    <h4>modifie valeur variable (event)</h4>
+    <input type="button" value="clic moi pour changer la varialbe titel " (click)="changeMe()">
+
+    <h4>modifie atribu element html (event)</h4>
+
+    <input type="button" value="clic moi pour me desactiver " (click)="disableMe()" [disabled]="enabled">
+</div>
